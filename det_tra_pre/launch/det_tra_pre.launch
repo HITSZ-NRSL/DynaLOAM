@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="ciassd_det_tra_pre" type="adet_tra_pre_node"   name="adet_tra_pre_node"    output="screen"/>
+
+    <!-- <rosparam file="$(find livox_imu_slam)/config/params_gazebo.yaml" command="load" />
+
+    <node pkg="livox_imu_slam" type="frontend_node"   name="frontend_node"   output="screen"   />
+
+    <node name="kittibag" pkg="rosbag" type="play" args="-r 0.1 -s 0    /media/st/data_fast/gazebo/train0410.bag" />
+
+    <node pkg="rviz" type="rviz" name="livox_imu_slam_rviz" args="-d $(find livox_imu_slam)/rviz/gazebo_imu_slam.rviz" /> -->
+</launch>

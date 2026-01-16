@@ -1,0 +1,80 @@
+/home/nrsl/software/jetbrain/clion-2022.1.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/home/nrsl/software/jetbrain/clion-2022.1.3/bin/ninja/linux/ninja -G Ninja -S /home/nrsl/workspace/temp/RobDet3D/rd3d/ops/havs/src -B /home/nrsl/workspace/temp/RobDet3D/rd3d/ops/havs/src/cmake-build-release
+-- The CXX compiler identification is GNU 7.5.0
+-- The CUDA compiler identification is NVIDIA 11.0.194
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Found Python3: /home/nrsl/software/anaconda3/envs/py38/bin/python3.8 (found version "3.8.16") found components: Interpreter 
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+CMake Warning (dev) at /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:586 (option):
+  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
+  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  For compatibility with older versions of CMake, option is clearing the
+  normal variable 'CUDA_SEPARABLE_COMPILATION'.
+Call Stack (most recent call first):
+  /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:11 (include)
+  /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)
+  /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)
+  /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  CMakeLists.txt:14 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found CUDA: /usr/local/cuda (found version "11.0") 
+-- Caffe2: CUDA detected: 11.0
+-- Caffe2: CUDA nvcc is: /usr/local/cuda/bin/nvcc
+-- Caffe2: CUDA toolkit directory: /usr/local/cuda
+-- Caffe2: Header version is: 11.0
+CMake Warning (dev) at /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/share/cmake/Caffe2/public/cuda.cmake:117 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable CUDNN_ROOT is set to:
+
+    /home/nrsl/software/cuda/cudnn/cudnn-linux-x86_64-8.4.0.27_cuda11.6-archive/cuda
+
+  Environment variable CUDNN_ROOT is set to:
+
+    /home/nrsl/software/cuda/cudnn/cudnn-linux-x86_64-8.4.0.27_cuda11.6-archive/cuda
+
+  For compatibility, CMake is ignoring the variable.
+Call Stack (most recent call first):
+  /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)
+  /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  CMakeLists.txt:14 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found CUDNN: /home/nrsl/software/cuda/cudnn/cudnn-linux-x86_64-8.4.0.27_cuda11.6-archive/cuda/lib  
+-- Found cuDNN: v8.4.0  (include: /home/nrsl/software/cuda/cudnn/cudnn-linux-x86_64-8.4.0.27_cuda11.6-archive/cuda/include, library: /home/nrsl/software/cuda/cudnn/cudnn-linux-x86_64-8.4.0.27_cuda11.6-archive/cuda/lib)
+-- /usr/local/cuda/lib64/libnvrtc.so shorthash is b31c2d61
+-- Autodetected CUDA architecture(s):  7.5
+-- Added CUDA NVCC flags for: -gencode;arch=compute_75,code=sm_75
+CMake Warning at /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:22 (message):
+  static library kineto_LIBRARY-NOTFOUND not found.
+Call Stack (most recent call first):
+  /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:127 (append_torchlib_if_found)
+  CMakeLists.txt:14 (find_package)
+
+
+-- Found Torch: /home/nrsl/software/anaconda3/envs/torch112/lib/python3.7/site-packages/torch/lib/libtorch.so  
+-- Configuring done
+WARNING: Target "hvcs_cuda" requests linking to directory "/home/nrsl/software/cuda/cudnn/cudnn-linux-x86_64-8.4.0.27_cuda11.6-archive/cuda/lib".  Targets may link only to libraries.  CMake is dropping the item.
+-- Generating done
+ -- Build files have been written to: /home/nrsl/workspace/temp/RobDet3D/rd3d/ops/havs/src/cmake-build-release
