@@ -15,8 +15,7 @@ conda activate pt_iassd  &&
 python ../pc_det_thread.py
 
 # start Lidar Odometry
-roslaunch fast_lio mapping_horizon.launch
-
+roslaunch aloam_velodyne dynaloam.launch
 # Datasets
 
 ## Reference
