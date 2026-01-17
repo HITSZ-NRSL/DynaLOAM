@@ -1,0 +1,7 @@
+<!-- 本功能包作用为生成kitti格式的仿真数据集，将rosbag里面的点云帧保存为bin格式，同时记录其在map系下的坐标和时间戳。 -->
+<launch>
+    <node pkg="dynamic_removal" name="parseBag" type="parseBag" output="screen">
+        <param name="bag_path" value="/home/eric/data/LVIO/fast_lio_res.bag"/>
+        <param name="folder_path" value="/home/eric/data/LVIO/slam/"/>
+    </node>
+</launch>

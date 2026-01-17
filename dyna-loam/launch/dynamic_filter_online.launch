@@ -1,0 +1,19 @@
+<launch>
+    <remap from="/cloud_registered_body" to="/velodyne_cloud_3"/>
+    <remap from="/aft_pgo_odom" to="/aft_mapped_to_init_high_frec"/>
+    <!-- <remap from="/aft_pgo_odom" to="/laser_odom_to_init"/> -->
+
+    <!-- <param name="dataset_config" value="/home/eric/a_ros_ws/dyna_loam_ws/src/dyna-loam/config/dynamicFilter_kitti64.json"/> -->
+    <param name="dataset_config" value="/home/eric/a_ros_ws/dyna_loam_ws/src/dyna-loam/config/dynamicFilter_ouster64.json"/>
+
+    <param name="leafSize" value="0.2"/>
+    <!-- <param name="keyFrameGap" value="1"/> -->
+    <param name="filterScanInDR" value="false" />
+    <param name="interval" value="1" />
+
+    <node pkg="dynamic_removal" name="genKeyFrameNode" type="genKeyFrameNode" output="screen"/>
+
+    <node pkg="rviz" type="rviz" name="dynamic_filter" args="-d $(find dynamic_removal)/config/dynamic_filter_kitti.rviz" />
+
+    <node pkg="dynamic_removal" name="dynamic_filter_online" type="dynamic_filter_online" output="screen"/>
+</launch>

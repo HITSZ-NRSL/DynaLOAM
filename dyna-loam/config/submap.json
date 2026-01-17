@@ -1,0 +1,19 @@
+{
+    "startPose": 50,
+    "endPose": 80,
+    "saveCloud": true,
+    "interval": 1,
+    "leafSize": 0.3,
+    "rImgRow": 64,
+    "rImgCol": 900,
+    "visStatic": true,
+    "visDynamic": true,
+    "visRevert": true,
+    "visGround": false,
+
+    "nearbyCapacity": 30,
+    "nearDisThresh": 0.05,
+    "revertMaxDis": 50,
+    "revertMinDis": 10,
+    "eigenValDiff": 0.2
+}

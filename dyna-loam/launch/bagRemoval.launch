@@ -1,0 +1,6 @@
+<!-- 本功能包作用为滤除原始rosbag里面的动态点云，然后重新打包为新的rosbag，需要输入的参数为bag的路径，生成的bag为相同目录下的*_filter.bag -->
+<launch>
+    <node pkg="dynamic_removal" name="bagRemoval" type="bagRemoval">
+        <param name="bag_path" value="/home/eric/data/simulation_demo_dynamic/demo_dyna_4.bag"/>
+    </node>
+</launch>

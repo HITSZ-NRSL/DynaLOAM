@@ -1,0 +1,32 @@
+{
+    "max_range": 200,
+    "min_range": 1,
+    "resolution": 5,
+    "num_iter": 3,
+    "num_lpr": 5,
+    "num_min_pts": 10,
+    "th_seeds": 0.5,
+    "th_dist": 0.125,
+    "th_outlier": 0.3,
+    "th_normal": 0.949,
+    "th_weight": 200,
+    "th_lcc_normal_similiarity": 0.03,
+    "th_lcc_planar_model_dist": 0.1,
+    "th_obstacle": 1.0,
+    "refine_mode": true,
+
+    "rImgRow": 64,  
+    "rImgCol": 900,
+    "nearbyCapacity" : 10,
+    "z_tolerance": 1,
+    "nearDisThresh": 1,
+    "revertMaxDis": 40,
+    "revertMinDis": 0, 
+    "eigenValDiffThresh": 0.2,
+
+    "submapMaxSize": 4,
+    "dynamicLowThresh": 0.2,
+    "dynamicHighThresh": 0.2,
+    "clusterDis": 0.7,
+    "maxDynamicClusterSize": 2000
+}

@@ -1,0 +1,25 @@
+{
+    "cloudFileDir" : "/home/eric/data/erasor/05/velodyne/",
+    "poseFile" : "/home/eric/data/erasor/05/pose.txt",
+    "outputBt" : "/home/eric/data/erasor/00/octomap.bt",
+    "outputGlobal" : "/home/eric/file/octomap/octoGloabl.pcd",
+    "outputDynamic" : "/home/eric/file/octomap/octoDynamic.pcd",
+    "outputStatic" : "/home/eric/file/octomap/octoStatic.pcd",
+
+    "startPose" : 0,
+    "endPose" : 3000,
+
+    "leafSize" : 0.2,
+    "saveFlag" : true,
+    "submapCapacity" : 50,
+    "frameInterval" : 1,
+
+    "resolution" : 0.2,
+    "probability_hit" : 0.65,
+    "probability_miss" : 0.45,
+    "threshold_min" : 0.1,
+    "threshold_max" : 0.9,
+    "threshold_occupancy" : 0.55,
+
+    "evaluation": true
+}

@@ -1,0 +1,25 @@
+{
+    "cloudFileDir": "/home/eric/data/haomo/0511/keyframes/",
+    "poseFile": "/home/eric/data/haomo/0511/update_pose.txt",
+    "saveFileDir": "/home/eric/data/haomo/0511/",
+
+    "saveCloudFlag": false,
+
+    "useScanMatching": false,
+
+    "visRawCloud": true,
+    "visGroundSeg": true,
+    "visClusterSeg" : true,
+
+    "visVisibilitySeg": true,
+    "visDynamic": true,
+    "visRevert": true,
+    "visGround": false,
+    "visStatic": true,
+
+    "startPose": 110,
+    "endPose": 115,
+    "frameInterval": 1,
+    "submapMaxSize": 5,
+    "leafSize": 0.1
+}

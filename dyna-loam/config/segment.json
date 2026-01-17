@@ -1,0 +1,5 @@
+{
+    "cloud_file": "labeled_noground_submap_50_80.pcd",
+    "cluster_tolerance": 1,
+    "condition_tolerance": 0.5
+}

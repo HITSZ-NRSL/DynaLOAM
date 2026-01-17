@@ -1,0 +1,33 @@
+{
+    "cloudFileDir": "/home/eric/data/LVIO/slam/velodyne/",
+    "poseFile": "/home/eric/data/LVIO/slam/pose.txt",
+    "saveFileDir": "/home/eric/data/LVIO/slam/file",
+    "calibration_file": "/media/eric/Elements SE/data/kitti_odom/dataset/sequences/00/calib.txt",
+    "@configFile": "/home/eric/a_ros_ws/dyna_loam_ws/src/dyna-loam/config/dynamicFilter_kitti64.json",
+    "configFile": "/home/eric/a_ros_ws/dyna_loam_ws/src/dyna-loam/config/dynamicFilter_ouster64.json",
+    "saveCloudFlag": true,
+    "isKittiFormat": true,
+    "evaluation": false,
+
+    "visRawCloud": false,
+
+    "visGroundSeg": false,
+
+    "visVisibilitySeg": false,
+
+    "visClusterSeg" : false,
+
+
+    "visDynamic": true,
+    "visStatic": true,
+    "visRevert": true,
+
+    "visEvaluation": false,
+
+    "startPose": 0,
+    "endPose": 2000,
+    "frameInterval": 1,
+    "submapMaxSize": 10,
+    "leafSize": 0.3,
+    "z_max":-1.3
+}
