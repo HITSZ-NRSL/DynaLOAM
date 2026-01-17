@@ -11,20 +11,24 @@ Run src/RobDet3D/tools/deploy/pc_det_thread.py for detection. You need to modify
 ### LiDAR Odometry
 
 # start ia-ssd Detector
+```bash
   conda activate pt_iassd  &&
   python ../pc_det_thread.py
-
+```
 # start Lidar Odometry
+```bash
   roslaunch aloam_velodyne aloam_kitti_dyna.launch (for kitti)
   ros bag play kitti_xxx.bag
-
+```
 # Run loop closure detection
+```bash
   Modify the file path in kitti_lc.cpp, then compile the project.
   rosrun loop_closure kitti_lc [algorithm] [sequence]
   
   Visualize the loop closure detection results: Modify the file path in draw.py
   python draw.py
   python draw_bow3d.py 
+```
 # Datasets
 https://pan.baidu.com/s/1dMVe3D68kwmlVo7u9tlexg 提取码: m7qd
 ## Reference
